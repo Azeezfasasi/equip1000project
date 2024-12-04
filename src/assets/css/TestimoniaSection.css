@@ -1,0 +1,192 @@
+/* Style for Testimonia Section */
+.beneficiaries-section {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .beneficiaries-section .title {
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .beneficiaries-row {
+    display: flex;
+    flex-direction: row;
+    gap: 148px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .beneficiaries-row-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .beneficiaries-row .t-box {
+    display: block;
+    background: rgba(251, 232, 219, 0.4);
+    border-radius: 8px;
+    width: 401px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+  
+  .beneficiaries-row-2 .t-box {
+    display: block;
+    background: rgba(251, 232, 219, 0.4);
+    border-radius: 8px;
+    width: 401px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+  
+  .t-box .title {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .title img {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  object-fit: cover;
+  }
+  
+  .title .name-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  .name-box .name {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .name-box .position {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -10px;
+  }
+  
+  .t-box .sub-text {
+    margin-left: 20px;
+  }
+  
+  .sub-text p {
+    color: #495057;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  width: 354px;
+  }
+  
+  .sub-text img {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Mobile Style for Testimonia Section */
+.beneficiaries-section .title {
+    font-size: 32px;
+  }
+  
+  .beneficiaries-row {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .beneficiaries-row-2 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .beneficiaries-row .t-box {
+    width: 100%;
+  }
+  
+  .beneficiaries-row-2 .t-box {
+    width: 100%;
+  }
+  
+  .t-box .sub-text p {
+    width: 90%;
+  }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* Mobile Style for Testimonia Section */
+.beneficiaries-section .title {
+    font-size: 32px;
+  }
+  
+  .beneficiaries-row {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .beneficiaries-row-2 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .beneficiaries-row .t-box {
+    width: 100%;
+  }
+  
+  .beneficiaries-row-2 .t-box {
+    width: 100%;
+  }
+  
+  .t-box .sub-text p {
+    width: 90%;
+  }
+  }

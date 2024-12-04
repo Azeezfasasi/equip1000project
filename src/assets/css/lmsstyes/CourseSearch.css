@@ -1,0 +1,110 @@
+#searchInput {
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#itemList {
+  display: block;
+  width: 70%;
+  z-index: 1000;
+}
+
+#itemList li {
+  font-size: 24px;
+  padding: 5px 0;
+  list-style: none;
+  z-index: 1000;
+  border: 1px solid black;
+  margin: 5px 0;
+  padding-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#itemList a {
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+#itemList img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+#noResultsMessage {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.search span {
+  color: red;
+}
+.search-items {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  #mobileitemList {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    z-index: 1000;
+  }
+
+  #mobileitemList li {
+    font-size: 16px;
+    padding: 5px 0;
+    list-style: none;
+    z-index: 1000;
+    border: 1px solid black;
+    margin: 5px 0;
+    padding-left: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: -40px;
+  } 
+
+  #mobileitemList a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #mobileitemList {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    z-index: 1000;
+  }
+
+  #mobileitemList li {
+    font-size: 16px;
+    padding: 5px 0;
+    list-style: none;
+    z-index: 1000;
+    border: 1px solid black;
+    margin: 5px 0;
+    padding-left: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: -40px;
+  } 
+
+  #mobileitemList a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .mobile-search {
+    display: none;
+  }
+}

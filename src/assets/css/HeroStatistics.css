@@ -1,0 +1,51 @@
+/* Global box-sizing */
+
+/* Frame container for positioning */
+.frame-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+
+/* Frame for the images (inner container) */
+.image-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Image style */
+.image-style {
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Adjusted image margins */
+.image-margin-left {
+  margin: 0 0 0 -20px;
+}
+
+/* Text style for the description */
+.text-description {
+  color: var(--neutral-600, #ffffff);
+  text-align: left;
+  font-family: var(--desktop-title-2-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--desktop-title-2-font-size, 16px);
+  line-height: var(--desktop-title-2-line-height, 140%);
+  font-weight: var(--desktop-title-2-font-weight, 400);
+  position: relative;
+}

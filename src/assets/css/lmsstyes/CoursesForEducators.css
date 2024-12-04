@@ -1,0 +1,361 @@
+.courses-for-educators-header,
+.courses-for-educators-header * {
+  box-sizing: border-box;
+}
+.categories-container .courses-for-educators-header {
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.courses-for-educators-header p {
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 33px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    margin-top: -20px;
+}
+
+.categories-container .courses-for-educators-description {
+    padding: 0px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color:#495057;
+    text-align: left;
+    margin-top: -70px;
+}
+
+.courses-for-educators-description p {
+    color: #495057;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.courses-for-educators-description span {
+    color: #495057;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.categories-container .courses-for-educators-container {
+    padding: 0px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: -20px;
+}
+
+.courses-for-educators-container .container-box {
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 350px;
+    position: relative;
+    margin: 0px 0;
+}
+
+.container-box .title {
+    padding: 8px 16px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    color: #3d6b7b;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0px;
+}
+
+.container-box .sub-title {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color:#495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -30px;
+}
+
+.container-box .course-image {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 260px;
+    position: relative;
+    margin-top: -30px;
+    text-decoration: none;
+}
+
+.course-image img {
+    background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%);
+    border-radius: 16px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+
+}
+
+.course-image p {
+    background: var(--neutral-100, #000000);
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 34px;
+    color:#f5f5f5;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    margin-top: -40px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .content .lms-categories-container {
+        margin-top: -270px;
+    }
+    
+    .categories-container .courses-for-educators-header {
+        margin-top: 30px;
+    }
+
+    .courses-for-educators-header p {
+        font-size: 28px;
+    }
+
+    .categories-container .courses-for-educators-description {
+        margin-top: -70px;
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .courses-for-educators-description p {
+        font-size: 20px;
+    }
+
+    .courses-for-educators-description span {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .categories-container .courses-for-educators-container {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto 60px auto;
+        position: relative;
+
+    }
+
+    .courses-for-educators-container .container-box {
+        display: block;
+        width: 100%;
+        height: 300px;
+        position: initial;
+        margin: 0 0 30px 0;
+    }
+
+    .courses-for-educators-container .mobile-kahoot {
+        display: block;
+        margin-top: -50px;
+    }
+
+    .courses-for-educators-container .mobile-innovative {
+        display: block;
+        margin-top: -20px;
+    }
+
+    .courses-for-educators-container .mobile-social {
+        display: block;
+        margin-top: 90px;
+    }
+
+    .courses-for-educators-container .mobile-ai {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .courses-for-educators-container .mobile-virtual {
+        display: block;
+        margin-top: -20px;
+    }
+
+    .container-box .title {
+        display: block;
+        font-size: 23px;
+    }
+
+    .container-box .sub-title {
+        display: block;
+        font-size: 18px;
+        margin-top: -25px;
+    }
+
+    .container-box .course-image {
+        height: 200px;
+    }
+
+    .course-image p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .content .lms-categories-container {
+        margin-top: -260px;
+    }
+    
+
+    .categories-container .courses-for-educators-header {
+        margin-top: 30px;
+    }
+
+    .courses-for-educators-header p {
+        font-size: 28px;
+    }
+
+    .categories-container .courses-for-educators-description {
+        margin-top: -50px;
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .courses-for-educators-description p {
+        font-size: 20px;
+    }
+
+    .courses-for-educators-description span {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .categories-container .courses-for-educators-container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .courses-for-educators-container .container-box {
+        display: block;
+        width: 100%;
+        height: 300px;
+        position: initial;
+        margin: 0 0 30px 0;
+    }
+
+    .courses-for-educators-container .mobile-kahoot {
+        display: block;
+        margin-top: -50px;
+    }
+
+    .courses-for-educators-container .mobile-innovative {
+        display: block;
+        margin-top: -20px;
+    }
+
+    .courses-for-educators-container .mobile-social {
+        display: block;
+        margin-top: 90px;
+    }
+
+    .courses-for-educators-container .mobile-ai {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .courses-for-educators-container .mobile-virtual {
+        display: block;
+        margin-top: -20px;
+    }
+
+    .container-box .title {
+        display: block;
+        font-size: 23px;
+    }
+
+    .container-box .sub-title {
+        display: block;
+        font-size: 18px;
+        margin-top: -25px;
+    }
+
+    .container-box .course-image {
+        height: 200px;
+    }
+
+    .course-image p {
+        font-size: 20px;
+        text-align: center;
+    }
+}

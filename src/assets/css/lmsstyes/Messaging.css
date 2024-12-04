@@ -1,0 +1,552 @@
+.main-message-content {
+    background: #ffffff;
+    height: 900px;
+    width: 1085px;
+    overflow-x: hidden;
+    overflow-y: initial;
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    scrollbar-width: none;
+    overflow: -moz-scrollbar-none;
+  }
+  
+  .main-message-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .message-container  {
+      position: absolute;
+      top: 0;
+      /* border: 3px solid black; */
+  }
+  .tabs {
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* .new-message-tablink.active {
+      background-color: #ffa76d;
+    }
+  
+    .inbox-tablink.active {
+      background-color: #ffa76d;
+    } */
+  
+    .inbox-tablink.active, .new-message-tablink.active {
+      background-color: #ffa76d;
+  }
+    
+    .inbox-tablink {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 50%;
+      background: #ffa76d;
+      border-style: solid;
+      border-color: #cce6ff;
+      border-width: 1px;
+      padding: 16px 24px 16px 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      overflow: hidden;
+      color: #ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+  
+    .new-message-tablink {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 50%;
+      background: #ced4da;
+      border-style: solid;
+      border-color: #cce6ff;
+      border-width: 1px;
+      padding: 16px 24px 16px 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      overflow: hidden;
+      color: #ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+    
+    .tablink:hover {
+      background-color: #ddd;
+    }
+    
+    .tabcontent {
+      display: none;
+      border-top: none;
+      width: 100%;
+      height: 800px;
+      overflow-y: scroll;
+      padding: 0;
+      margin-top: -20px;
+    }
+    
+    .tabcontent h2 {
+      margin-top: 0;
+    }
+    
+    .tabcontent.active {
+      display: block;
+    }
+  
+    /* style for the inbox message */
+    .message-box {
+      background:#f6fafe;
+      padding: 8px 16px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      height: 80px;
+      position: relative;
+      text-decoration: none;
+      margin-bottom: 10px;
+  
+    }
+  
+    .name {
+      padding: 0;
+      text-decoration: none;
+    }
+    .name p {
+      color: #000000;
+      text-align: left;
+      font-family:"Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+  
+    .message {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      text-decoration: none;
+    }
+  
+    .message p {
+      color:#495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 13px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      margin-top: -20px;
+    }
+  
+    .message .msg-count {
+      margin-left: 10px;
+      font-weight: 600;
+      font-size: 17px;
+    }
+    
+    .message-box .delete {
+      position: absolute;
+      top: 40px;
+      right: 15px;
+      font-size: 26px;
+      text-decoration: none;
+      color: black;
+    }
+  
+    /* style for new message */
+    .recipient-wrapper {
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      overflow: hidden;
+      margin-top: -10px;
+  
+    }
+  
+    .subject-wrapper {
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      overflow: hidden;
+      margin-top: -30px;
+    }
+  
+    .message-wrapper {
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      overflow: hidden;
+      margin-top: -10px;
+    }
+  
+    .recipient-wrapper p {
+      padding: 8px;
+      height: 34px;
+      color:#000000;
+      text-align: left;
+      font-family:"Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+  
+    .subject-wrapper p {
+      padding: 8px;
+      height: 34px;
+      color:#000000;
+      text-align: left;
+      font-family:"Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+  
+    .message-wrapper p {
+      display: block;
+      padding: 8px;
+      height: 34px;
+      color:#000000;
+      text-align: left;
+      font-family:"Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      margin-top: -320px;
+    }
+  
+    .recipient-wrapper input[type=text] {
+      border-radius: 16px;
+      padding: 8px 16px 8px 16px;
+      flex: 1;
+      height: 48px;
+      position: relative;
+      overflow: visible;
+      font-size: 18px;
+      border: 1px solid #ced4da;
+  
+    }
+  
+    .subject-wrapper input[type=text] {
+      border-radius: 16px;
+      padding: 8px 16px 8px 16px;
+      flex: 1;
+      height: 48px;
+      position: relative;
+      overflow: visible;
+      font-size: 18px;
+      border: 1px solid #ced4da;
+    }
+  
+    .message-wrapper textarea {
+      border-radius: 16px;
+      border-style: solid;
+      border-color: #ced4da;
+      border-width: 1px;
+      padding: 8px 16px 8px 16px;
+      flex: 1;
+      height: 392px;
+      position: relative;
+      font-size: 18px;
+    }
+  
+    .recipient-wrapper i {
+      position: absolute;
+      top: 52px;
+      right: 40px;
+      z-index: 1;
+      font-size: 20px;
+    }
+  
+    #message {
+      resize: none;
+    }
+  
+    .login {
+      background:#275c6f;
+      border-radius: 8px;
+      padding: 8px 16px 8px 16px;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 48px;
+      outline: none;
+      border: none;
+      color: #ffffff;
+      text-align: left;
+      font-family:"Roboto-SemiBold", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      position: relative;
+      position: absolute;
+      bottom: 90px;
+      right: 35px;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .main-message-content {
+        display: block;
+        width: 100%;
+        height: 0;
+        margin: 0px 0 0 0;
+        padding: 0;
+        position: initial;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+  
+      .mobile-message-content {
+          display: block;
+          height: fit-content;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          position: initial;
+      }
+      .message-container  {
+          display: block;
+          width: 100%;
+          height: fit-content;
+          margin-bottom: 0;
+          overflow: hidden;
+          position: absolute;
+          margin-top: 10px;
+      }
+  
+      .inbox-tablink {
+          padding: 16px 24px 16px 24px;
+          font-size: 16px;
+      }
+  
+      .new-message-tablink {
+          padding: 16px 24px 16px 24px;
+          font-size: 16px;
+      }
+  
+      .tabcontent {
+          margin-top: 10px;
+          height: 500px;
+          overflow-x: hidden;
+          overflow-y: scroll;
+      }
+  
+      .name p {
+          font-size: 18px;
+      }
+  
+      .message {
+          display: block;
+          width: 90%;
+      }
+  
+      .message .msg-count {
+          display: block;
+          margin-left: 0px;
+          margin-top: -8px;
+      }
+  
+      .message-box .delete {
+          font-size: 18px;
+      }
+      .recipient-wrapper, .subject-wrapper {
+          width: 90%;
+      }
+  
+      .subject-wrapper {
+          margin-bottom: 20px;
+      }
+  
+      .recipient-wrapper p, .subject-wrapper p, .message-wrapper p {
+          font-size: 17px;
+      }
+  
+      .recipient-wrapper input[type=text] {
+          padding: 0;
+      }
+  
+      .subject-wrapper input[type=text] {
+          padding: 0;
+          width: 0%;
+      }
+  
+      .message-wrapper p {
+        margin-top: -140px;
+      }
+  
+      .message-wrapper textarea {
+          padding: 0;
+          height: 200px;
+      }
+  
+      .recipient-wrapper i {
+          top: 50px;
+          right: 30px;
+          font-size: 20px;
+      }
+  
+      .login {
+          display: block;
+          margin: 0 auto 20px auto;
+          position: initial;
+          text-align: center;
+          height: 42px;
+      }
+    }
+  
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .main-message-content {
+        display: block;
+        width: 100%;
+        /* height: 0; */
+        margin: 0px 0 0 0;
+        padding: 0;
+        position: initial;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+  
+      .mobile-message-content {
+          display: block;
+          /* height: fit-content; */
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          position: initial;
+      }
+      .message-container  {
+          display: block;
+          width: 100%;
+          height: fit-content;
+          margin-bottom: 0;
+          overflow: hidden;
+          position: absolute;
+          margin-top: 15px;
+      }
+  
+      .inbox-tablink {
+          padding: 16px 24px 16px 24px;
+          font-size: 16px;
+      }
+  
+      .new-message-tablink {
+          padding: 16px 24px 16px 24px;
+          font-size: 16px;
+      }
+  
+      .tabcontent {
+          margin-top: 10px;
+          height: 500px;
+          overflow-x: hidden;
+          overflow-y: scroll;
+      }
+  
+      .name p {
+          font-size: 18px;
+      }
+  
+      .message {
+          display: block;
+          width: 90%;
+      }
+  
+      .message .msg-count {
+          display: block;
+          margin-left: 0px;
+          margin-top: -8px;
+      }
+  
+      .message-box .delete {
+          font-size: 18px;
+      }
+      .recipient-wrapper, .subject-wrapper {
+          width: 90%;
+      }
+  
+      .subject-wrapper {
+          margin-bottom: 20px;
+      }
+  
+      .recipient-wrapper p, .subject-wrapper p, .message-wrapper p {
+          font-size: 17px;
+      }
+  
+      .recipient-wrapper input[type=text] {
+          padding: 0;
+      }
+  
+      .subject-wrapper input[type=text] {
+          padding: 0;
+          width: 0%;
+      }
+  
+      .message-wrapper p {
+        margin-top: -140px;
+      }
+  
+      .message-wrapper textarea {
+          padding: 0;
+          height: 200px;
+      }
+  
+      .recipient-wrapper i {
+          top: 50px;
+          right: 30px;
+          font-size: 20px;
+      }
+  
+      .login {
+          display: block;
+          margin: 0 auto 20px auto;
+          position: initial;
+          text-align: center;
+          height: 42px;
+      }
+    }

@@ -1,0 +1,159 @@
+.right-content {
+    display: block;
+    width: 300px;
+    height: 600px;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+  
+  }
+  
+  .right-content .translate-button {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+  }
+  
+  .right-content .translate-button:hover {
+    background-color: #3d6b7b;
+  }
+  
+  .translate-button a {
+    color:#ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  
+  .translate-button img {
+    margin-right: 5px;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+  }
+
+  .calendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+  }
+  
+  .days {
+    display: flex;
+    font-size: 13px;
+  }
+  
+  .column {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    /* height: 80px; */
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .disabled {
+    color: #ccc;
+  }
+  
+  .selected {
+    background-color: #f0f8ff;
+  }
+  
+  .number {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .event {
+    font-size: 12px;
+    color: #007BFF;
+    width: 0px;
+    /* width: 1ch; 3 characters wide */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    text-align: center;
+  }
+
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .popup h3 {
+    margin-top: 0;
+  }
+  
+  .popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .popup form button {
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+
+  @media only screen and (max-width: 767px) {
+    .right-content {
+        display: none;
+      }
+      
+      .calendar-widget  {
+        display: none;
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+      th, td {
+        padding: 10px;
+      }
+  }

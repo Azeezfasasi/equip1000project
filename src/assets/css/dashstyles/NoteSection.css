@@ -1,0 +1,205 @@
+.notes-section {
+    border-radius: 24px;
+    border-style: solid;
+    border-color: #f6fafe;
+    border-width: 2px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    /* width: 760px; */
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none; /* For older versions of Firefox */
+  }
+  
+  .notes-section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .notes-section .notes-header {
+    background: #ffffff;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 65.85px;
+    position: relative;
+  }
+  .notes-header p {
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .notes-section .notes-container {
+    background: #ffffff;
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #f6fafe;
+    border-width: 1px;
+    padding: 16px 8px 16px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 224px;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .notes-container .notes-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 580px;
+    position: absolute;
+    left: 8px;
+    top: 16px;
+  } 
+  
+  .notes-group .label {
+    color: #f5f5f5;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .notes-group input[type=text] {
+    color: #f5f5f5;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height:  24px;
+    font-weight: 400;
+    background: #ffffff;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width: 1px;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notes-group input[type=text]:hover {
+    border: 1px solid black;
+  }
+  
+  input::placeholder {
+    color: #f5f5f5;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height:  24px;
+    font-weight: 400;
+  }
+  
+  .notes-btn-wrapper {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 190px;
+    height: 42px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notes-btn-wrapper:hover {
+    background-color: #3d6b7b;
+  }
+  
+  .notes-btn-wrapper a {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Mobile style for the notes section */
+    .notes-section {
+        display: none;
+      }
+      
+      .mobile-note-pad {
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        height: 257px;
+        position: relative;
+        margin-bottom: 100px;
+      }
+
+      .mobile-note-pad .note-pad-box {
+        color: #275c6f;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+      }
+
+      .mobile-note-pad .note-pad {
+        background: #ffffff;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #275c6f;
+        border-width: 1px;
+        flex: 1;
+        width: 328px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .mobile-note-pad {
+      display: none;
+    }
+  }

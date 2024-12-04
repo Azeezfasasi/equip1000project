@@ -1,0 +1,292 @@
+/* Style for value preposition section */
+.value-proposition-section {
+    display: block;
+    width: 92%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .value-proposition-section p {
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+  
+  .value-proposition-section .value-discover {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  
+  }
+  
+  .value-discover {
+    vertical-align: middle;
+    margin-bottom: 60px;
+  }
+  
+  .value-image img {
+    background: linear-gradient(to left, #ced4da, #ced4da);
+    border-radius: 7.17px;
+    flex-shrink: 0;
+    width: 510px;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  .discover-details {
+    vertical-align: middle;
+  }
+  
+  .discover-details .title {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .discover-details .sub-title {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    margin-top: -30px;
+  }
+  
+  .discover-details .btn {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 120px;
+    height: 48px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+  
+  /* Style for call to action section */
+  .cta-container {
+    background-image: url("../img/ctadeem.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-container .cta-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 90px;
+  }
+  
+  .cta-contents .title {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .cta-contents .sub-title {
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 1022px;
+    color: #ffffff;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-contents span {
+    color: #ffa76d;
+  }
+  
+  .cta-contents .btn {
+    background: #275c6f;
+    color: #ffffff;
+    font-family: "Roboto-Regular", sans-serif;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 184px;
+    height: 48px;
+    position: relative;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    text-decoration: none;       
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Style for value preposition section */
+.value-proposition-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .value-proposition-section p {
+    font-size: 32px;
+  }
+  
+  .value-proposition-section .value-discover {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  
+  .value-image img {
+    width: 97%;
+    height: 250px;
+  }
+  
+  .discover-details .title {
+    font-size: 32px;
+  }
+  
+  .discover-details .up {
+    margin-bottom: 50px;
+  }
+  
+  .value-up img {
+    margin-bottom: 30px;
+  }
+  
+  .up .btn {
+    margin-bottom: 40px;
+  }
+  
+  /* Stle for call to action section */
+  .cta-container {
+    background-position-x: center;
+  }
+  
+  .cta-container .cta-contents {
+    margin-top: 30px;
+  }
+  
+  .cta-contents .title {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .cta-contents .sub-title {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .cta-contents .btn {
+    margin-top: -30px;
+  }
+  }
+  
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Style for value preposition section */
+.value-proposition-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .value-proposition-section p {
+    font-size: 32px;
+  }
+  
+  .value-proposition-section .value-discover {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  
+  .value-image img {
+    width: 97%;
+    height: 250px;
+  }
+  
+  .discover-details .title {
+    font-size: 32px;
+  }
+  
+  .discover-details .up {
+    margin-bottom: 50px;
+  }
+  
+  .value-up img {
+    margin-bottom: 30px;
+  }
+  
+  .up .btn {
+    margin-bottom: 40px;
+  }
+  
+  /* Stle for call to action section */
+  .cta-container {
+    background-position-x: center;
+  }
+  
+  .cta-container .cta-contents {
+    margin-top: 30px;
+  }
+  
+  .cta-contents .title {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .cta-contents .sub-title {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .cta-contents .btn {
+    margin-top: -30px;
+  }
+  }

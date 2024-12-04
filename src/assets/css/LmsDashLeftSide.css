@@ -1,0 +1,117 @@
+.sidebar-active {
+    background:#275c6f;
+    border-style: solid;
+    border-color: #cce6ff;
+    border-width: 1px 1px 1px 0px;
+    width: 256px;
+    height: 928px;
+    position: relative;
+    padding-top: 60px;
+  }
+
+  .sidebar-active .side-link {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+  }
+
+  .sidebar-active .active {
+    background: #ffa76d;
+  }
+
+  .side-link img {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 30px;
+
+  }
+
+  .side-link p {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .side-link p:hover {
+    font-weight: 800;
+  }
+
+  .sidebar-active .logout {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .sidebar-active .community p {
+    color: #3d6b7b;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .sidebar-active {
+        position: absolute;
+        left: -320px;
+        z-index: 2;
+        height: 100%;
+        width: 60%;
+        overflow-y: hidden;
+        padding-top: 60px; 
+        transition: left 0.3s ease;
+      }
+      
+      .sidebar-active.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      
+      .sidebar-active .side-link {
+        margin-left: -10px;
+      }
+      
+      .side-link img {
+        width: 18px;
+        height: 18px;
+      }
+      
+      .side-link p {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 140%;
+        font-weight: 500;
+        position: relative;
+      }
+      
+      .side-link p:hover {
+        font-size: 17px;
+      }
+      
+      .sidebar-active .logout {
+        margin-left: -10px;
+        position: initial;
+      }
+
+      #mobile-menu-toggle {
+        /* display: block; */
+        position: fixed;
+        top: 20px;
+        left: 14px;
+        cursor: pointer;
+        z-index: 9999;
+        color: white;
+      }
+      
+  }

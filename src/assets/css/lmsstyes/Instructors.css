@@ -1,0 +1,311 @@
+.instructors-main {
+    position: absolute;
+    top: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 850px;
+    width: 1085px;
+    scrollbar-width: none;
+    overflow: -moz-scrollbar-none;
+}
+
+.instructors-main::-webkit-scrollbar {
+    display: none;
+}
+
+.staff-header {
+    padding: 8px 16px 8px 16px;
+    display: block;
+    margin-top: 20px;
+}
+
+.staff-header .title {
+    display: block;
+    color:#275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 33px;
+    line-height: 140%;
+    font-weight:700;
+    position: relative;
+    margin-top: 0px;
+}
+
+.staff-header .sub-title {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -20px;
+    width: 90%;
+}
+
+.mentors-container {
+    background: #ffffff;
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #fff5cc;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 10px;
+    width: 92%;
+}
+
+.mentors-container .mentors-head {
+    padding: 8px 16px 0px 16px;
+    color: #3d6b7b;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0;
+}
+
+.mentors-container .mentors-body {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.mentors-body .staff {
+    display: block;
+    width: 232px;
+    /* height: 459px; */
+    position: relative;
+}
+
+.staff img {
+    background: #d9d9d9, #d9d9d9;
+    border-radius: 50%;
+    width: 232px;
+    height: 224px;
+    object-fit: cover;
+}
+
+.staff-name {
+    background: #000000;
+    padding: 4px 8px 4px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    /* width: 232px; */
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.staff-name p {
+    color: #f5f5f5;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+}
+
+.staff-bio {
+    padding: 0px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 126px;
+    background-color: lightyellow;
+    box-shadow: 0 4px 2px 0 rgb(0,0,0,0.4);
+}
+
+.staff-bio p {
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size:16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+}
+
+.staff .staff-contact {
+    display: block;
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    width: 100%;
+    height: 56px;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size:16px;
+    line-height: 24px;
+    font-weight:600;
+    text-decoration: none;
+    margin-top: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+    .instructors-main {
+        width: 100%;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+
+    .intsructors-container {
+        padding-bottom: 150px;
+    }
+
+    .staff-header .title {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .staff-header .sub-title  {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .mentors-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 0 auto;
+        width: 95%;
+    }
+
+    .mentors-container .mentors-head {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mentors-container .mentors-body {
+        flex-direction: row;
+        width: 320px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .staff-name p {
+        font-size: 19px;
+    }
+
+    .staff-bio p {
+        font-size: 15px;
+    }
+
+    .staff img {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .staff .staff-contact {
+        padding: 2px 10px 2px 10px;
+        font-size: 15px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .mentors-body .staff {
+        display: block;
+        width: 100%;
+        /* height: 459px; */
+        position: relative;
+    }  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .instructors-main {
+        width: 100%;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+
+    .intsructors-container {
+        padding-bottom: 150px;
+    }
+
+    .staff-header .title {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .staff-header .sub-title  {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .mentors-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 0px auto;
+        width: 95%;
+    }
+
+    .mentors-container .mentors-head {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mentors-container .mentors-body {
+        flex-direction: row;
+        width: 700px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .staff-name p {
+        font-size: 19px;
+    }
+
+    .staff-bio p {
+        font-size: 15px;
+    }
+
+    .staff img {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .staff .staff-contact {
+        padding: 2px 10px 2px 10px;
+        font-size: 15px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .mentors-body .staff {
+        display: block;
+        width: 100%;
+        /* height: 459px; */
+        position: relative;
+    }  
+}

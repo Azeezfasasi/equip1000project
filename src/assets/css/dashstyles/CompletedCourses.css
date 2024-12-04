@@ -1,0 +1,207 @@
+.completed-courses {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    /* width: 760px; */
+    -webkit-text-stroke-width: 100%;
+    margin-top: 0px;
+  }
+  
+  .completed-courses .completed-courses-header {
+    background: #ffffff;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  .completed-courses-header p {
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-left: -5px;
+    margin-bottom: 0px;
+  }
+  
+  .completed-courses-container {
+    padding: 0px 0px 8px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .completed-courses-container .box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 23%;
+    height: 200px;
+    position: relative;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1),
+      4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .completed-courses-container .box:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .box p {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+  }
+  
+  .completed-courses .courses-btn-wrapper {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 190px;
+    height: 42px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .completed-courses .courses-btn-wrapper:hover {
+    background-color: #3d6b7b;
+  }
+  
+  .courses-btn-wrapper a {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Mobile style for completed courses */
+    .completed-courses {
+      padding: 8px 16px 8px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      position: relative;
+      margin-top: 10px;
+    }
+    
+    .completed-courses .completed-courses-header {
+      display: block;
+      padding: 6px 10px 6px 10px;
+      width: 70%;
+      margin-bottom: 10px;
+    }
+    
+    .completed-courses-header p  {
+      color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+      margin-top: 0px;
+    }
+    
+    .completed-courses-container {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      position: relative;
+      margin-top: -10px;
+    }
+    
+    .completed-courses-container .box {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 4px 12px 4px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-shrink: 0;
+      width: 79px;
+      height: 96px;
+      position: relative;
+      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .completed-courses-container .box p {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 8px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      max-width: 55px;
+      max-height: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .stats img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 15px;
+      top: 37px;
+      overflow: visible;
+      text-align: center;
+    }
+    
+    .completed-courses .courses-btn-wrapper {
+      display: none;
+    }
+  }

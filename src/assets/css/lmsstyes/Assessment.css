@@ -1,0 +1,703 @@
+.assessment-container {
+    position: absolute;
+    top: 0px;
+    padding-left: 10px;
+    background-color: #ffffff;
+}
+
+.assessment-instructions-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .assessment-instructions-header .assessment-title {
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .assessment-instructions-header .assessment-description {
+    padding: 0px 16px 8px 16px;
+    gap: 8px;
+    color:#495057;
+    text-align: left;
+    position: relative;
+    margin-top: -50px;
+    margin-left: -15px;
+  }
+
+  .assessment-description .one {
+    color: #495057;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+
+  .assessment-description .two {
+    color: #495057;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  .assessment-container .assessment-body {
+    padding: 8px 16px 8px 0px;
+    position: relative;
+    margin-top: -30px;
+  }
+
+  .assessment-body .first {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .assessment-body ul {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -20px;
+  }
+
+  .assessment-body .second {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -50px;
+  }
+
+  .assessment-body .third {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .third ul {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .assessment-container span {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .assessment-container .assessment-link {
+    display: block;
+    margin: 30px auto 0 auto;
+    text-align: center;
+
+  }
+
+  .assessment-container a {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 10px 16px 10px 16px;
+    text-align: center;
+    height: 56px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .assessment-container a:hover {
+    background-color: #3d6b7b;
+  }
+
+  .assessment-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid #a7b7bc;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+    height: fit-content;
+
+  }
+
+  .assessment-selection .assessment-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+
+
+  }
+
+  .assessment-selection .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 60px;
+    /* border: 1px solid black; */
+  }
+
+  .row .title {
+    color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 23px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+      width: 40%;      
+  }
+
+  .row .top-title {
+    color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 23px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+      width: 40%;      
+  }
+
+  .row .top-status {
+    color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 23px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+      width: 25%;      
+  }
+
+  .row .top-action {
+    color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 23px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+      width: 20%;      
+  }
+
+  .row .status {
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 500;
+    position: relative;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 25%;
+
+  }
+
+  .row a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 20%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .assessment-container {
+        display: block;
+        width: 97%;
+        padding-top: 30px;
+        padding-bottom: 230px;
+    }
+
+    .assessment-instructions-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .assessment-instructions-header .assessment-title {
+      color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .assessment-instructions-header .assessment-description {
+        margin-top: -30px;
+    }
+
+    .assessment-description .one  {
+        color: #495057;
+        text-align: left;
+        font-family:"Roboto-Bold",sans-serif;
+        font-size: 13px;
+        line-height:120%;
+        font-weight: 700;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-description .two {
+        /* font-size: 20px; */
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-body {
+      padding: 8px 16px 8px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      height: 842px;
+      position: relative;
+    }
+
+    .assessment-body .first {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-body .pick-first {
+      margin-bottom: 45px;
+    }
+
+    .assessment-body ul {
+      margin-top: -10px;
+    }
+
+    .assessment-body ul li {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-body .second {
+        /* font-size: 17px; */
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+        margin-top: -90px;
+    }
+
+    .assessment-body .third {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 12px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      margin-top: -10px;
+    }
+
+    .third ul {
+        font-size: 17px;
+    }
+
+    .assessment-body span {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 12px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      margin-top: -15px;
+    }
+
+    .assessment-body .mobile-third {
+      margin-top: -30px;
+    }
+
+    ul li {
+        font-size: 17px;
+    }
+
+    .assessment-body .mobile-last {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 12px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      margin-top: -50px;
+    }
+
+    .assessment-container .assessment-link {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .assessment-container a {
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+
+    .assessment-selection {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border: 1px solid #a7b7bc;
+      margin: -30px auto 0 auto;
+      width: 100%;
+      border-radius: 12px;
+      height: 100%;
+      overflow-y: scroll;
+      position: relative;
+    }
+  
+    .assessment-selection .assessment-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: fit-content;
+  
+    }
+  
+    .assessment-selection .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      height: 120px;
+      /* border: 1px solid black; */
+      padding: 0;
+      margin-top: -40px;
+    }
+  
+    .row .title {
+      color: #275c6f;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 120%;
+        font-weight: 500;
+        position: relative;
+        width: 40%;      
+    }
+  
+    .row .top-title {
+      color: #275c6f;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 17px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        width: 40%;      
+    }
+  
+    .row .top-status {
+      color: #275c6f;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 17px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        width: 25%;      
+    }
+  
+    .row .top-action {
+      color: #275c6f;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 17px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        width: 20%;      
+    }
+  
+    .row .status {
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 16px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 25%;
+  
+    }
+  
+    .row a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      width: 20%;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .assessment-container {
+        display: block;
+        width: 97%;
+        padding-top: 30px;
+        padding-bottom: 230px;
+    }
+
+    .assessment-instructions-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .assessment-instructions-header .assessment-title {
+      color: #275c6f;
+      text-align: left;
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .assessment-instructions-header .assessment-description {
+        margin-top: -30px;
+    }
+
+    .assessment-description .one  {
+        color: #495057;
+        text-align: left;
+        font-family:"Roboto-Bold",sans-serif;
+        font-size: 13px;
+        line-height:120%;
+        font-weight: 700;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-description .two {
+        /* font-size: 20px; */
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-body {
+      padding: 8px 16px 8px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      height: 842px;
+      position: relative;
+    }
+
+    .assessment-body .first {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-body .pick-first {
+      margin-bottom: 45px;
+    }
+
+    .assessment-body ul {
+      margin-top: -10px;
+    }
+
+    .assessment-body ul li {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .assessment-body .second {
+        /* font-size: 17px; */
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+        margin-top: -90px;
+    }
+
+    .assessment-body .third {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 12px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      margin-top: -10px;
+    }
+
+    .third ul {
+        font-size: 17px;
+    }
+
+    .assessment-body span {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 12px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      margin-top: -15px;
+    }
+
+    .assessment-body .mobile-third {
+      margin-top: -30px;
+    }
+
+    ul li {
+        font-size: 17px;
+    }
+
+    .assessment-body .mobile-last {
+      color: #495057;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 12px;
+      line-height: 120%;
+      font-weight: 400;
+      position: relative;
+      align-self: stretch;
+      margin-top: -50px;
+    }
+
+    .assessment-container .assessment-link {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .assessment-container a {
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+  }

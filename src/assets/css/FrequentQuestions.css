@@ -1,0 +1,154 @@
+/* Style for Frequently Asked Questions */
+.faq-questions {
+    display: block;
+    width: 90%;
+    margin: 0 auto 200px auto;
+    text-align: center;
+  }
+  
+  .faq-questions .title {
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .accordion {
+    display: block;
+    margin: 0 auto;
+    width: 797px;
+    height: 156px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: #f6fafe;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width: px;
+    position: relative;
+    gap: 16px;
+    text-align: left;
+  }
+  
+  .accordion-header {
+    background-color: #f6fafe;
+    padding: 10px;
+    cursor: pointer;
+    height: 36px;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    padding: 20px 0 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  
+  .accordion-header .arrow {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  
+  .active .arrow {
+    font-family: "Roboto-Regular", sans-serif;
+    transform: rotate(180deg);
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 756px;
+    padding-left: 20px;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+
+
+
+@media only screen and (max-width: 767px) {
+    /* Mobile Style for Frequently Asked Questions */
+.faq-questions {
+    height: 400px;
+  }
+  .faq-questions .title {
+    font-size: 32px;
+  }
+  
+  .accordion {
+    width: 95%;
+  }
+  
+  .accordion-header {
+    font-size: 18px;
+    width: 85%;
+    padding: 20px 0 10px 20px;
+  }
+  
+  .header-pad {
+    padding-bottom: 30px;
+  }
+  
+  .accordion-header .arrow {
+    top: 20px;
+    right: -20px;
+  }
+  
+  .accordion-content {
+    width: fit-content;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Mobile Style for Frequently Asked Questions */
+.faq-questions {
+    height: 400px;
+  }
+  .faq-questions .title {
+    font-size: 32px;
+  }
+  
+  .accordion {
+    width: 95%;
+  }
+  
+  .accordion-header {
+    font-size: 18px;
+    width: 85%;
+    padding: 20px 0 10px 20px;
+  }
+  
+  .header-pad {
+    padding-bottom: 30px;
+  }
+  
+  .accordion-header .arrow {
+    top: 20px;
+    right: -20px;
+  }
+  
+  .accordion-content {
+    width: fit-content;
+  }
+  
+}

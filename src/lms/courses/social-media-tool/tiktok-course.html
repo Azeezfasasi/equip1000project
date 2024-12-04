@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok - EQUIP1000</title>
+    <link rel="icon" href="../../img/svg/card-web-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/lms/microsoft-office-tools.css">
+    <link rel="stylesheet" href="../../css/lms/dashboard-header.css">
+    <link rel="stylesheet" href="../../css/lms/dash-side-bar.css">
+    <link rel="stylesheet" href="../../css/eqip/mobile-bottom-nav.css">
+    <link rel="stylesheet" href="../../css/lms/notification.css">
+</head>
+<body>
+    <!-- start of the header section -->
+    <div class="sticky">
+      <div class="small-screen-navbar">
+          <a class="logo" href="../../lms.html"><img src="../../img/logo/Equip1000 logo.svg" /></a>
+          <div class="top-right">
+              <div class="notification">
+                  <i class="fa-regular fa-bell" id="notificationBtn"></i>
+                  <div class="line"></div>
+              </div>
+              <div class="profile">
+                  <a href="../../lms-dashboard.html"><img src="../../img/image-icon.png" alt=""></a>
+              </div>
+              <div class="name">
+                  <a href="../../lms-dashboard.html"><p>PRINCE</p></a>
+              </div>
+              <div class="id">
+                <a href="javascript:void(0)"><p>2023/Q4/7223</p></a>
+            </div>
+              <div class="dropdown" onclick="toggleDropdown()">
+                  <a href="javascript:void(0)"><i class="fa-solid fa-caret-down"></i></a>
+                  <div class="dropdown-content" id="myDropdown">
+                      <a href="../../lms-dashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                      <a href="../../settings/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
+                      <a href="../../settings/settings.html"><i class="fa-solid fa-lock"></i> Security</a>
+                      <a href="../../settings/settings.html"><i class="fa-solid fa-list-check"></i> Preferences</a>
+                      <a href="#" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                  </div>
+              </div>            
+          </div>
+          <div class="second-top-right">
+            <a href="" class="read-container">
+              <p>Read Screen</p>
+            </a> 
+            <div class="language-selection">
+              <select name="" id="">
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+            </div>
+          </div>
+      </div>
+  </div>
+    <!-- End of the header section -->
+
+    <!-- Pop up for notification -->
+  <div id="notificationModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>You have no unread notifications</p>
+    </div>
+  </div>
+  <!-- End of notification pop up -->
+
+    <!-- Start of the Left side bar -->
+    <!-- Mobile menu toggle button -->
+    <div id="mobile-menu-toggle">&#9776;</div>
+    <div class="sidebar-active">
+        <a class="side-link" href="../../lms-dashboard.html">
+            <img src="../../img/svg/Dashboard Icon.svg" alt="Dashboard Icon">
+            <p>Dashboard</p>
+        </a>
+        <a class="side-link active" href="../../lms-courses.html">
+          <img src="../../img/svg/Courses Icon.svg" alt="Couse Icon">
+          <p>Courses</p>
+        </a>
+        <a class="side-link" href="../../assessment/assessment-instructions.html">
+          <img src="../../img/svg/Assessment Icon.svg" alt="Assessment Icon">
+          <p>Assessment</p>
+        </a>
+        <a class="side-link" href="../../certificates/certificates.html">
+          <img src="../../img/svg/certificate.svg" alt="Certificate Icon">
+          <p>Certificates</p>
+        </a>
+        <a class="side-link" href="../../messaging/mesaging.html">
+          <img src="../../img/svg/Messaging Icon.svg" alt="Message Icon">
+          <p>Messaging</p>
+        </a>
+        <a class="side-link" href="../../instructors/instructors.html">
+          <img src="../../img/svg/Instructors Icon.svg" alt="Instructors Icon">
+          <p>Instructors</p>
+        </a>
+        <a class="side-link community" href="" style="pointer-events: none;">
+          <img src="../../img/svg/community-icon.svg" alt="Community Icon">
+          <p>Community</p>
+        </a>
+        <a class="side-link" href="../../settings/settings.html">
+          <img src="../../img/svg/Settings Icon.svg" alt="Settings Icon">
+          <p>Settings</p>
+        </a>
+        <a class="side-link logout" href="#" onclick="confirmLogout()">
+          <img src="../../img/svg/Logout Icon.svg" alt="Logout Icon">
+          <p>Logout</p>
+        </a>
+    </div>
+    <!-- end of the Left side bar -->
+
+    <!-- Start of main content -->
+    <div class="courses-content mobile-course-content">
+      <div class="main-screen">
+      <div class="microsoft-container">
+        <div class="microsoft-office-suite-header">
+          <p>TikTok</p>
+        </div>
+        <div class="microsoft-office-suite-description ms-description">
+          <p><span class="one">Ready to unlock the full potential of TikTok?
+          <br /></span>
+          <span class="two">This comprehensive course is your one-stop guide to mastering this essential tool, whether you&#039;re a complete beginner or looking to refine your existing skills. From crafting professional documents to automating repetitive tasks, you&#039;ll gain the knowledge and confidence to tackle any project with ease.</span>
+          </p>
+        </div>
+        <div class="course-description">
+          <p style="margin-top: 0px;" class="course-duration">Course Duration: 34 Hrs</p>
+        </div>
+        <div class="course-status">
+          <div class="status-color"></div>
+          <p>IN PROGRESS</p>
+        </div>
+        <div class="course-video-intro">
+            <a href="" class="mark-as-complete">Mark as Completed</a>
+            <iframe src="https://www.youtube.com/embed/j-ZAVHk5SaU?si=8Gw6Iacq4TMpbtdn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="listed-courses top-course">
+            <br><br>
+          <a href="">Save Video</a>
+        </div>
+        <!-- section for course document slider -->
+        <div class="course-document">
+          <div class="slider">
+            <div class="page">
+              <img src="../../img/ms-current-page.png" alt="Current page">
+              <div class="page-tracker">
+                <p>1/80</p>
+              </div>
+            </div>
+            <div class="page">
+              <img src="../../img/ms-current-page.png" alt="Current page">
+              <div class="page-tracker">
+                <p>2/80</p>
+              </div>
+            </div>
+            <div class="page">
+              <img src="../../img/ms-current-page.png" alt="Current page">
+              <div class="page-tracker">
+                <p>3/80</p>
+              </div>
+            </div>
+          </div>
+          <button class="prev-btn" onclick="slidePrevious()"><i class="fa-solid fa-caret-left"></i></button>
+          <button class="next-btn" onclick="slideNext()"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <a class="save-pdf" href="">Save PDF</a>
+        <a class="quiz-link" href="../../assessment/assessment-instructions.html">Take Quiz</a>
+      </div>
+
+      <!-- Start of the right content -->
+    <div class="right-content right-ms">
+      <a class="course-translate-btn" href=""><img src="../../img/g_translate.png" alt="Translate"> TRANSLATE PAGE</a>
+      <a class="course-read-btn" href=""><img src="../../img/read.png" alt="Translate"> READ SCREEN</a>
+      <div class="calendar-widget">
+        <div id="month-year"></div>
+        <div id="prev-month">&lt;</div>
+        <div id="next-month">&gt;</div>
+        <table id="calendar">
+          <thead>
+            <tr>
+              <th style="color: red;">Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body"></tbody>
+        </table>
+      </div>
+      <div class="course-list">
+        <a href="" class="lists active">The Word Interface <i class="fa-regular fa-circle-check"></i></a>
+        <a href="" class="lists">Working with Text</a>
+        <a href="" class="lists">Formatting Fundamentals</a>
+        <a href="" class="lists">Advanced Formatting</a>
+        <a href="" class="lists"> Working with Images and Tables</a>
+        <a href="" class="lists">Advanced Techniques</a>
+        <a href="" class="lists">Collaboration and Sharing</a>
+        <a href="" class="lists">Beyond the Basics</a>
+        <a href="" class="lists">Bonus Materials</a>
+        <a href="" class="lists">Real-world Projects</a>
+      </div>
+    </div>
+    <!-- End of calendar widget -->
+    </div>
+    </div>
+    <!-- End of the main contents -->
+
+
+   <!-- Section for the mobile bottom nav -->
+   <div class="mobile-bottom-nav-bar">
+    <a href="#" class="bar-box">
+      <img src="../../img/svg/arrow_back.svg" alt="">
+      <div class="nav-text">Back</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../../img/svg/arrow_forward.svg" alt="">
+      <div class="nav-text">Next</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../../img/svg/speaker_phone-mobile.svg" alt="">
+      <div class="nav-text">Read</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../../img/svg/g_translate-mobile.svg" alt="">
+      <div class="nav-text">Translate</div>
+    </a>
+   </div>
+
+
+
+
+   <script src="../../js/menu-drop-down.js"></script>
+   <script src="../../js/header.js"></script>
+   <script src="../../js/lms-mobile-menu.js"></script>
+   <script src="../../js/calendar-widget.js"></script>
+   <script src="../../js/notofication.js"></script>
+    <!-- Script for logout -->
+    <script>
+      function confirmLogout() {
+    // Display a confirmation prompt
+    var confirmLogout = window.confirm("Are you sure you want to logout?");
+
+    // Check the user's choice
+    if (confirmLogout) {
+        // If the user clicked OK, perform the logout action
+        alert("Logout successful!");
+        
+        // Redirect to the index page
+        window.location.href = "../lms.html"; // Replace "index.html" with your actual index page
+
+    } else {
+        // If the user clicked Cancel, do nothing or handle accordingly
+        alert("Logout canceled.");
+    }
+}
+    </script>
+    <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65b535410ff6374032c5932c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>

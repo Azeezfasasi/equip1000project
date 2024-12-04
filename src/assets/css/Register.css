@@ -1,0 +1,599 @@
+.mobile-side {
+    display: none;
+}
+
+.register-container .right-side {
+    background: #ffffff;
+    width: 60%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* position: absolute;
+    top: 0;
+    right: 0px; */
+    margin-top: -1050px;
+    float: right;
+}
+
+.right-side .form-title {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 90px 0 0 20px;
+}
+
+.form-title .title {
+    display: block;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+}
+
+.form-title .sub-title {
+    display: block;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-top: -40px;
+}
+
+.right-side .reg-form-container {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 92%;
+}
+
+.reg-form-container form {
+    padding-bottom: 90px;
+}
+
+.reg-form-container form .col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 400px;
+}
+
+.col-1 label {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.col-1 input[type=text], input[type=email] {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 90%;
+    height: 48px;
+    font-size: 16px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.col-1 select {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 90%;
+    height: 48px;
+    position: relative;
+}
+
+.reg-form-container .institution {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.reg-form-container form .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.col-2 input[type=text], input[type=email], input[type=password] {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 90%;
+    height: 48px;
+    position: relative;
+}
+
+.col-2 select {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 226px;
+    height: 48px;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.col-2 label {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+form .next-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .register-container {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 98%;
+        position: inherit;
+        margin-top: -45px;
+        margin-bottom: 100px;
+    }  
+    .reg-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .reg-form-container form {
+        /* width: 310px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: -43px;
+        margin-top: -55px;
+        padding-bottom: 100px;
+    }
+
+    .right-side .form-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 15px;
+        padding-left: 0;
+    }
+
+    .form-title .title {
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .form-title .sub-title {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    form .next-btn button {
+        background: #275c6f;
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 48px;
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .register-container .left-side {
+        display: none;
+    }
+
+    .register-container .r-left-side {
+        display: none;
+    }
+
+    .mobile-side {
+        display: none;
+        width: 100%;
+        background: #275c6f;
+        height: 53%;
+        margin: 0px auto 0 auto;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .register-container .right-side {
+        display: block;
+        width: 100%;
+        height: 53%;
+        border-radius: 12px;
+        margin: 0px auto 0 auto;
+        text-align: center;
+        position: inherit;
+        margin-top: 50px;
+    }
+
+    .col-1 label {
+        margin-bottom: 0px;
+    }
+
+    .col-2 label {
+        margin-bottom: 0px;
+    }
+
+    .reg-form-container form {
+        display: block;
+        position: inherit;
+        text-align: left;
+        padding: 40px 0;
+    }
+
+    .reg-form-container form .col-1 {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-1 input[type=text], input[type=email] {
+        display: block;
+        width: 90%;
+    }
+
+    .col-1 select {
+        display: block;
+        width: 90%;
+    }
+
+    .reg-form-container form .col-2 {
+        display: block;
+        width: 90%;
+        /* height: 53%; */
+        border-radius: 12px;
+        margin: 0px auto 70px auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .col-2 select, input[type=text], input[type=email], input[type=password]{
+        display: block;
+        position: inherit;
+        width: 90%;
+    }
+
+    .col-1 label, .col-2 label {
+        display: block;
+        margin-top: 25px;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .col-2 select {
+        display: block;
+    }
+
+    form .next-btn {
+        display: block;
+        position: inherit;
+        margin-top: 0px;
+    }
+
+    form .previous-btn a {
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        width: 40%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .register-container {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 98%;
+        position: inherit;
+        margin-bottom: 100px;
+    }  
+    .reg-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .reg-form-container form {
+        /* width: 310px; */
+        width: 100%;
+        /* max-width: 320px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: -40px;
+        margin-top: -55px;
+    }
+
+    .right-side .form-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+        margin-top: 30px;
+        margin-left: 15px;
+        padding-left: 0;
+    }
+
+    .form-title .title {
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .form-title .sub-title {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    form .next-btn button {
+        background: #275c6f;
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 48px;
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .register-container .left-side {
+        display: none;
+    }
+
+    .register-container .r-left-side {
+        display: none;
+    }
+
+    .mobile-side {
+        display: none;
+        width: 100%;
+        background: #275c6f;
+        height: 53%;
+        margin: 0px auto 0 auto;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .register-container .right-side {
+        display: block;
+        width: 100%;
+        height: 53%;
+        border-radius: 12px;
+        margin: 0px auto 0 auto;
+        text-align: center;
+        position: inherit;
+        margin-top: 50px;
+    }
+
+    .col-1 label {
+        margin-bottom: 0px;
+    }
+
+    .col-2 label {
+        margin-bottom: 0px;
+    }
+
+    .reg-form-container form {
+        display: block;
+        position: inherit;
+        text-align: left;
+        padding: 40px 0;
+    }
+
+    .reg-form-container form .col-1 {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-1 input[type=text], input[type=email] {
+        display: block;
+        width: 90%;
+    }
+
+    .col-1 select {
+        display: block;
+        width: 90%;
+    }
+
+    .reg-form-container form .col-2 {
+        display: block;
+        width: 90%;
+        /* height: 53%; */
+        border-radius: 12px;
+        margin: 0px auto 70px auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .col-2 select, input[type=text], input[type=email], input[type=password]{
+        display: block;
+        position: inherit;
+        width: 90%;
+    }
+
+    .col-1 label, .col-2 label {
+        display: block;
+        margin-top: 25px;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .col-2 select {
+        display: block;
+    }
+
+    form .next-btn {
+        display: block;
+        position: inherit;
+        margin-top: 0px;
+    }
+
+    form .previous-btn a {
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        width: 40%;
+        text-align: center;
+    }
+}

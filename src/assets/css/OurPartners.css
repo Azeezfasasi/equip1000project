@@ -1,0 +1,168 @@
+/* Styly for Our Partnership */
+.partners-section {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 293px;
+    background-color: #f5f5f5;
+    /* overflow: hidden; */
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    }
+    
+    .partners-section .our-partnerships {
+      display: block;
+      color: #000000;
+      text-align: center;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 48px;
+      line-height: 140%;
+      font-weight: 400;
+      font-family: "Roboto-SemiBold", sans-serif;
+      line-height: 72px;
+      font-weight: 400;
+      margin: 60px auto 0px auto; 
+    }
+
+    .partners-logo {
+      display: flex;
+      width: 70%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+    
+    .partners-section .renmoney {
+      width: 205.02px;
+      height: 97px;
+      /* position: absolute;
+      left: 114.99px;
+      top: 170px; */
+      object-fit: cover;
+    }
+    
+    .partners-section .clan {
+      width: 134px;
+      height: 62px;
+      /* position: absolute;
+      left: 534px;
+      top: 187px; */
+      object-fit: cover;
+    }
+    
+    .partners-section .lease {
+      width: 200px;
+      height: 90px;
+      /* position: absolute;
+      left: 872px;
+      top: 170px; */
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: 767px) {
+      /* Mobile style for Our Partnership */
+    .partners-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      height: fit-content;
+      text-align: center;
+      position: relative;
+    }
+
+    .partners-section .our-partnerships {
+      font-size: 32px;
+    }
+
+    .partners-logo {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .partners-section .renmoney {
+      display: block;
+      width: 50%;
+      margin: 40px auto;
+      text-align: center;
+      position: initial;
+    }
+
+    .partners-section .clan {
+      display: block;
+      width: 50%;
+      margin: 40px auto;
+      text-align: center;
+      position: initial;
+    }
+
+    .partners-section .lease {
+      display: block;
+      /* width: fit-content; */
+      width: 60%;
+      height: 100px;
+      margin: 40px auto;
+      text-align: center;
+      position: initial;
+    }
+
+    }
+    
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      /* Mobile style for Our Partnership */
+    .partners-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      height: fit-content;
+      text-align: center;
+      position: relative;
+    }
+
+    .partners-section .our-partnerships {
+      font-size: 32px;
+    }
+
+    .partners-section .renmoney {
+      display: block;
+      width: 50%;
+      margin: 40px auto;
+      text-align: center;
+      position: initial;
+    }
+
+    .partners-section .clan {
+      display: block;
+      width: 50%;
+      margin: 40px auto;
+      text-align: center;
+      position: initial;
+    }
+
+    .partners-section .lease {
+      display: block;
+      /* width: fit-content; */
+      width: 60%;
+      height: 100px;
+      margin: 40px auto;
+      text-align: center;
+      position: initial;
+    }
+
+    }
+    

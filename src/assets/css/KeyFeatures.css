@@ -1,0 +1,184 @@
+/* Style for the product features skills */
+.product-features-section,
+.product-features-section * {
+  box-sizing: border-box;
+}
+
+.product-features-section {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.key-features-title {
+  color: #000000;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 48px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feauture-section {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: -50px;
+}
+
+.features-single {
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #ced4da;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 324px;
+  height: 332px;
+  position: relative;
+  overflow: hidden;
+}
+
+.features-single .inner-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 18px;
+  top: 40px;
+}
+
+.inner-box .features-section-image {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.inner-box .features-title {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 19px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  margin-top: -15px;
+}
+
+.inner-box .feature-sub-title {
+  color: #495057;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  width: 288px;
+  margin-top: -25px;
+}
+
+.inner-box .features-btn {
+  background: #275c6f;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: -20px;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Mobile Style for the product features skills */
+.product-features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .key-features-title {
+    font-size: 32px;
+  }
+  
+  .feauture-section  {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .feauture-section .features-single {
+    width: 98%;
+  }
+  
+  .inner-box .feature-sub-title {
+    display: block;
+    width: fit-content;
+  }
+  
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* Mobile Style for the product features skills */
+.product-features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .key-features-title {
+    font-size: 32px;
+  }
+  
+  .feauture-section  {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .feauture-section .features-single {
+    width: 98%;
+  }
+  
+  .inner-box .feature-sub-title {
+    display: block;
+    width: fit-content;
+  }
+  
+}

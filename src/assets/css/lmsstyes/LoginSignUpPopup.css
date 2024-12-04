@@ -1,0 +1,849 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    visibility: hidden;
+    z-index: 999; /* Ensure it's below the pop-up */
+    transition: opacity 200ms ease-in-out, visibility 0ms ease-in-out 200ms;
+  }
+  
+  .overlay.active {
+    visibility: visible;
+    transition: opacity 200ms ease-in-out;
+  }
+    /* .popup {
+      height: 462px;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.25);
+      width: 900px;
+      padding: 25px 35px;
+      visibility:hidden;
+      transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 200ms;
+      background: rgba(39, 92, 111, 0.2);
+      position: relative;
+      box-shadow: inset -7.55px 7.55px 7.55px 0px rgba(255, 255, 255, 0.28),
+        inset 7.55px -7.55px 7.55px 0px rgba(182, 182, 182, 0.28);
+      overflow: hidden;
+      backdrop-filter: blur(40px);
+      z-index: 1000;
+      background: rgba(39, 92, 111, 0.2);
+    } */
+
+    .login-popup{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 25px 35px;
+        z-index: 1000;
+        background: rgba(39, 92, 111, 0.2);
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 200ms;
+        box-shadow: inset -7.55px 7.55px 7.55px 0px rgba(255, 255, 255, 0.28),
+        inset 7.55px -7.55px 7.55px 0px rgba(182, 182, 182, 0.28);
+        backdrop-filter: blur(40px);
+        z-index: 1000;
+      }
+
+      .signup-popup{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 25px 35px;
+        z-index: 1000;
+        background: rgba(39, 92, 111, 0.2);
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 200ms;
+        box-shadow: inset -7.55px 7.55px 7.55px 0px rgba(255, 255, 255, 0.28),
+        inset 7.55px -7.55px 7.55px 0px rgba(182, 182, 182, 0.28);
+        backdrop-filter: blur(40px);
+        z-index: 1000;
+      }
+  
+    /* #popup-login {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } */
+  
+    /* #popup-signup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } */
+  
+    #signupMessage {
+      font-family: "Roboto-Bold", sans-serif;
+      color: #ffa76d;
+    }
+  
+    #loginMessage {
+      font-family: "Roboto-Bold", sans-serif;
+      color: #ffa76d;
+    }
+  
+    .popup.active {
+      top: 50%;
+      opacity: 1;
+      visibility:visible;
+      transform: translate(-50%, -50%) scale(1);
+      transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 200ms;
+    }
+  
+    .login-popup .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      color: red;
+      font-family: "Roboto-Regular", sans-serif;
+      text-align: center;
+      line-height: 15px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 35px;
+    }
+
+    .signup-popup .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        color: red;
+        font-family: "Roboto-Regular", sans-serif;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 35px;
+      }
+  
+    .form-element h2 {
+      color: #ffa76d;
+      text-align: center;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+  
+    .form-element form {
+      display: block;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+
+    .popup-error-message {
+        color: rgb(145, 17, 17);
+        font-size: 18px;
+    }
+  
+    .form-element {
+      display: block;
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .form-element .email {
+      border-style: dashed;
+      border-color:#000000;
+      border-width: 1px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      color:#ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 23px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      padding: 0 0 0 10px;
+      margin-bottom: 20px;
+    }
+  
+    .form-element .name {
+      border-style: dashed;
+      border-color:#000000;
+      border-width: 1px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      color:#ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 23px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      padding: 0 0 0 10px;
+      margin-bottom: 20px;
+    }
+  
+    .form-element .password {
+      border-style: dashed;
+      border-color:#000000;
+      border-width: 1px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      /* width: 400px; */
+      height: 56px;
+      color:#ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 23px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      padding: 0 0 0 10px;
+    }
+  
+    .name img {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+  
+    .email img {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+  
+    .password img {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+  
+    .name input {
+      width: 400px;
+      padding: 16px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 23px;
+    }
+  
+    .email input {
+      width: 400px;
+      padding: 16px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 23px;
+    }
+  
+    .password input {
+      width: 400px;
+      padding: 16px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 23px;
+    }
+  
+    #loginEmail::placeholder {
+      color: white;
+      font-size: 23px;
+    }
+  
+    #loginPassword::placeholder {
+      color: white;
+      font-size: 23px;
+    }
+  
+    #regFirstName::placeholder {
+      color: white;
+      font-size: 23px;
+    }
+  
+    #regEmail::placeholder {
+      color: white;
+      font-size: 23px;
+    }
+  
+    #regPassword::placeholder {
+      color: white;
+      font-size: 23px;
+    }
+  
+    .form-element .check-container {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .check-container input {
+      background: #ffffff;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: 1000;
+    }
+  
+    .check-container .remember-me {
+      color: #ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+    }
+  
+    .form-element .forget-container {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .forget-container .forgot-password {
+      color: #ffffff;
+      text-align: left;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      text-decoration: none;
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+  
+    .form-element .submit-container {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    .submit-container .p-login {
+      /* background: #275c6f; */
+      background-color: #3d6b7b;
+      border-radius: 8px;
+      padding: 8px 16px 8px 16px;
+      width: 350px;
+      /* height: 48px; */
+      display: block;
+      margin: 40px auto 0 auto;
+      color: #ffffff;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 28px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      border: none;
+      outline: none;
+    }
+  
+    .submit-container .p-login:hover {
+      /* background-color: #3d6b7b; */
+      background-color: #275c6f;
+      border: 1px solid #3d6b7b;
+    }
+  
+    .form-element .bottom-account {
+      position: relative;
+      text-align: center;
+      margin-left: -110px;
+    }
+  
+    .bottom-account p {
+      display: inline-block;
+      color:#ffffff;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      margin-left: 100px;
+    }
+    
+    .bottom-account .sign-up {
+      display: inline-block;
+      text-decoration: none;
+      color: #ffa76d;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+    }
+  
+  
+    @media (max-width: 768px) {
+      .popup {
+        width: 75%;
+        transform: translate(-50%, -50%) scale(1.25);
+      }
+  
+      #popup-login {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    
+      #popup-signup {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+  
+      .popup.active {
+        margin-top: 100px;
+      }
+  
+      .popup .close-btn {
+        border-radius: 8px 0px 8px 0px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        overflow: hidden;
+      }
+  
+      .form-element h2 {
+        font-size: 23px;
+      }
+  
+      .form-element {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: -10px;
+      }
+  
+      .form-element form {
+        width: 100%;
+      }
+  
+      .form-element form .name {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .form-element .email {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .form-element .password {
+        text-align: center;
+        /* width: 270px; */
+        width: 100%;
+        /* margin-left: -20px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .form-element .name {
+        text-align: center;
+        width: 270px;
+        margin-left: -20px;
+      }
+  
+      .name input {
+        /* width: 400px; */
+        width: 100%;
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left: 0px;
+        color: white;
+        font-size: 20px;
+      }
+  
+      .email input {
+        /* width: 400px; */
+        width: 100%;
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        /* margin-left: 20px; */
+        color: white;
+        font-size: 20px;
+      }
+  
+      .password input {
+        /* width: 400px; */
+        width: 100%;
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        /* margin-left: 20px; */
+        color: white;
+        font-size: 20px;
+      }
+  
+      .email #email::placeholder {
+        color: black;
+        font-size: 20px;
+      }
+  
+      #pwd::placeholder {
+        color: white;
+        font-size: 20px;
+      }
+  
+      .check-container input {
+        margin-left: 0px;
+      }
+  
+      .check-container .remember-me {
+        margin-left: 0px;
+      }
+  
+      .forget-container .forgot-password {
+        margin-right: -10px;
+      }
+  
+      .form-element .submit-container {
+        /* width: 100%;
+        margin-left: 0; */
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+  
+      .submit-container .p-login {
+        font-size: 23px;
+        display: block;
+        margin: 40px auto 0 auto;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+      }
+  
+      .form-element .bottom-account {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+  
+      .bottom-account p {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        margin-left: 50px;
+      }
+      .bottom-account a {
+        width: 27%;
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 400;
+        position: relative;
+        padding: 0;
+      }
+    }
+  
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .popup {
+        width: 80%;
+        transform: translate(-50%, -50%) scale(1.25);
+      }
+  
+      #popup-login {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    
+      #popup-signup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+  
+      .popup.active {
+        margin-top: 30px;
+      }
+  
+      .popup .close-btn {
+        border-radius: 8px 0px 8px 0px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+  
+      .form-element h2 {
+        font-size: 23px;
+      }
+  
+      .form-element {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: -5px;
+      }
+  
+      .form-element form {
+        width: 100%;
+      }
+  
+      .form-element form .name {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .form-element .email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .form-element .password {
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .form-element .name {
+        text-align: center;
+        width: 270px;
+        margin-left: -20px;
+      }
+  
+      .name input {
+        width: 400px;
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left: -200px;
+        color: white;
+        font-size: 20px;
+      }
+  
+      .email input {
+        width: 400px;
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left: -10px;
+        color: white;
+        font-size: 20px;
+      }
+  
+      .password input {
+        width: 400px;
+        padding: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left: -200px;
+        color: white;
+        font-size: 20px;
+      }
+  
+      #email::placeholder {
+        color: white;
+        font-size: 20px;
+      }
+  
+      #pwd::placeholder {
+        color: white;
+        font-size: 20px;
+      }
+  
+      .check-container input {
+        margin-left: 0px;
+      }
+  
+      .check-container .remember-me {
+        margin-left: 0px;
+      }
+  
+      .forget-container .forgot-password {
+        margin-right: -25px;
+      }
+  
+      .form-element .submit-container {
+        /* width: 100%;
+        margin-left: 0; */
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+  
+      .submit-container .p-login {
+        font-size: 23px;
+        display: block;
+        margin: 40px auto 0 auto;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+      }
+  
+      .form-element .bottom-account {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+  
+      .bottom-account p {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        margin-left: 100px;
+      }
+      .bottom-account a {
+        width: 27%;
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 400;
+        position: relative;
+        padding: 0;
+      }
+    }
+  

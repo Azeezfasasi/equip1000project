@@ -1,0 +1,489 @@
+.body,
+.body * {
+  box-sizing: border-box;
+}
+
+.hero-container {
+    background-color: #275c6f;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: 30px;  
+}
+
+.hero-container .hero {
+    flex-shrink: 0;
+    width: 60%;
+    height: 520px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+
+.hero-container .hero-writeup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    bottom: 72px;
+  }
+
+  .hero-container .hero-writeup-container h1 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+  }
+
+.hero-writeup-container span {
+    color: #ffc59e;
+}
+
+.hero-writeup-container .unlock-your-potential {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 33px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 321px;
+    margin-top: -60px;
+}
+
+.hero-writeup-container .sub-text {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    margin-top: -60px;
+}
+
+.hero-writeup-container .cta {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.cta .sign-up {
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#000000;
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 152px;
+    height: 48px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta .sign-up:hover {
+    border: 1px solid white;
+    color: black;
+}
+
+.cta .hero-lms-login {
+    background: #000000;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 152px;
+    height: 48px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta .hero-lms-login:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    width: 480px;
+    height: 620px;
+    position: relative;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        display: none;
+    }
+
+    .mobile-hero-section {
+        flex-shrink: 0;
+        /* height: 436px; */
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-top: 60px;
+    }
+
+    .mobile-hero-section .mobile-hero-container {
+        background-image: url("../img/svg/Hero\ Image.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        height: 352px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .mobile-hero-container .mobile-hero-content {
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .mobile-hero-content .mobile-hero-header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .mobile-hero-header .title {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 32px;
+        line-height: 120%;
+        font-weight:700;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .mobile-hero-header span {
+        color: #ffa76d;
+        font-family:"Roboto-Bold", sans-serif;
+        font-size: 32px;
+        line-height: 120%;
+        font-weight: 700;
+    }
+
+    .mobile-hero-header .sub-title {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 26px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        margin-top: -25px;
+    }
+
+    .mobile-hero-content .mobile-hero-body {
+        color:#ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 16px;
+        line-height:120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+        margin-top: -10px;
+    }
+
+    .mobile-hero-section .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero-cta .signup-onboarding-cta {
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #ffa76d;
+        border-width: 1px;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        /* width: 328px; */
+        width: 80%;
+        height: 32px;
+        position: relative;
+    }
+
+    .hero-cta .login-onboarding-cta {
+        background: #ffa76d;
+        border-radius: 8px;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        /* width: 328px; */
+        width: 80%;
+        height: 32px;
+        position: relative;
+    }
+
+    .signup-onboarding-cta .sign-up {
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 18px;
+        line-height:120%;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .login-onboarding-cta .l-log-in {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 18px;
+        line-height:120%;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-container {
+        display: none;
+    }
+
+    .mobile-hero-section {
+        flex-shrink: 0;
+        /* height: 436px; */
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-top: 60px;
+    }
+
+    .mobile-hero-section .mobile-hero-container {
+        background-image: url("../img/svg/Hero\ Image.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        height: 352px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .mobile-hero-container .mobile-hero-content {
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+
+    .mobile-hero-content .mobile-hero-header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .mobile-hero-header .title {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 32px;
+        line-height: 120%;
+        font-weight:700;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .mobile-hero-header span {
+        color: #ffa76d;
+        font-family:"Roboto-Bold", sans-serif;
+        font-size: 32px;
+        line-height: 120%;
+        font-weight: 700;
+    }
+
+    .mobile-hero-header .sub-title {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 26px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        margin-top: -25px;
+    }
+
+    .mobile-hero-content .mobile-hero-body {
+        color:#ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 16px;
+        line-height:120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+        margin-top: -10px;
+    }
+
+    .mobile-hero-section .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero-cta .signup-onboarding-cta {
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #ffa76d;
+        border-width: 1px;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 90%;
+        height: 32px;
+        position: relative;
+    }
+
+    .hero-cta .login-onboarding-cta {
+        background: #ffa76d;
+        border-radius: 8px;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 90%;
+        height: 32px;
+        position: relative;
+    }
+
+    .signup-onboarding-cta .sign-up {
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 18px;
+        line-height:120%;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .login-onboarding-cta .log-in {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 18px;
+        line-height:120%;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .mobile-hero-section {
+        display: none;
+    }
+}

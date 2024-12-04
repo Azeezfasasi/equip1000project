@@ -1,0 +1,1210 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.courses-content {
+  position: absolute;
+  top: 100px;
+  left: 265px;
+  overflow-y: initial;
+  overflow-x: hidden;
+  height: 900px;
+  /* max-width: 80%; */
+  width: 79%;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none; /* For older versions of Firefox */
+}
+
+.courses-content .main-screen {
+  width: 67%;
+}
+
+.microsoft-container {
+    padding: 0px 0px 24px 0px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+
+  }
+
+.content .microsoft-office-suite-header {
+    background: #ffffff;
+    position: relative;
+}
+
+.microsoft-office-suite-header p {
+    padding: 8px 16px 0px 16px;
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+.microsoft-office-suite-header .microsoft-office-suite-description {
+    padding: 0px 16px 8px 16px;
+    position: relative;
+    /* margin-top: -100px; */
+    display: block;
+}
+
+.microsoft-office-suite-description p {
+    color:#495057;
+    text-align: left;
+    position: relative;
+    flex: 1;
+    margin-top: -50px;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.ms-description p {
+  color:#495057;
+  text-align: left;
+  position: relative;
+  flex: 1;
+  margin-top: -50px;
+  margin-left: 10px;
+  width: 98%;
+}
+
+.microsoft-office-suite-description .one {
+    color: #495057;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+.microsoft-office-suite-description .two {
+    color: #495057;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.microsoft-office-suite-description .three {
+    color: #495057;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.microsoft-container .microsoft-office-suite-image {
+    border-radius: 16px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 304px;
+    position: relative;
+    overflow: hidden;
+}
+
+.microsoft-office-suite-image img {
+    background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%);
+    border-radius: 16px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 289px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.microsoft-container .course-description {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    margin-top: -10px;
+}
+
+.course-description .desc {
+    color: #495057;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 19px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  margin-bottom: -20px;
+}
+
+.course-description .course-duration {
+    padding: 8px 16px 8px 16px;
+    height: 48px;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-left: -17px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.main-screen .course-status {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 48px;
+    width: 100%;
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    /* margin-left: -20px; */
+
+}
+
+.course-status .status-color {
+    background: #ff2727;
+    flex-shrink: 0;
+    width: 16px;
+    height: 27px;
+    position: relative;
+}
+
+.course-status p {
+    display: block;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: 0px;
+}
+
+.microsoft-container .listed-courses {
+    padding: 0px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: -40px;
+}
+
+.microsoft-container .top-course {
+    margin-top: -30px;
+}
+
+.listed-courses .course-header {
+    padding: 8px 16px 0px 16px;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+}
+
+.listed-courses .course-short-description {
+    padding: 0px 16px 8px 16px;
+    position: relative;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -60px;
+}
+
+.listed-courses .course-image {
+    border-radius: 16px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.course-image img {
+    background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%);
+    border-radius: 16px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 289px;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+
+.listed-courses a {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    /* height: 42px; */
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    width: 92%;
+    display: block;
+    margin: -10px auto 0 auto;
+}
+
+.listed-courses a:hover {
+    background-color: #3d6b7b;
+}
+
+/* Style for right side content */
+.right-ms {
+  display: block;
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  top: 120px;
+  right: 10px;
+}
+.right-content .course-translate-btn {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    /* height: 42px; */
+    position: sticky;
+    color:#ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+
+  .right-content .course-read-btn {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    /* height: 42px; */
+    position: sticky;
+    color:#ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    width: 177px;
+    margin-left: 90px;
+  }
+
+  .course-video-intro {
+    width: 95%; 
+    margin-left: 15px;
+    position: relative;
+  }
+
+  .course-video-intro iframe {
+    border-radius: 16px;
+    width: 100%;
+    height: 315px;
+  }
+
+  .course-video-intro .mark-as-complete {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 42px;
+    color:#ffffff;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 420px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .course-video-intro .mark-as-complete:hover {
+    background-color: #3d6b7b;
+  }
+
+  .course-document {
+    background: #e7e5e5;
+    border-radius: 16px;
+    height: 301px;
+    width: 660px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .course-document .page img {
+    position: relative;
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+    height: 170px;
+  }
+
+  .page .page-tracker {
+    background: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 72px;
+    height: 47px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 16px 10px 16px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-tracker p {
+    color: #495057;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .save-pdf {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 10px 16px 10px 16px;
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .page {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+  }
+
+  .prev-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    cursor: pointer;
+  }
+
+  .next-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  .quiz-link {
+    background:#ced4da;
+    border-radius: 8px;
+    padding: 10px 16px 10px 16px;
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    /* height: 42px; */
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  /* stsyle for the course lists */
+  .course-list {
+    background: #f6fafe;
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: scroll;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .course-list .lists {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .course-list .active {
+    background: #d3fccf;
+  }
+
+  .lists i {
+    margin-left: 70px;
+    color: green;
+  }
+
+  /* Style for right content */
+.right-content {
+  display: block;
+  width: 300px;
+  height: 600px;
+  position: fixed;
+  top: 120px;
+  right: 10px;
+  /* overflow: hidden; */
+
+}
+
+.right-content .translate-button {
+  background: #275c6f;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  /* height: 42px; */
+  position: sticky;
+}
+
+.right-content .translate-button:hover {
+  background-color: #3d6b7b;
+}
+
+.translate-button a {
+  color:#ffffff;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.translate-button img {
+  margin-right: 5px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+/* style for calendar widget */
+.calendar-widget {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 4px;
+  border-radius: 16px;
+  height: 350px;
+  position: relative;
+  width: 300px;
+  margin: 30px 0 0 0;
+}
+
+table {
+border-collapse: collapse;
+margin-top: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+color: white;
+width: 100%;
+padding: 30px;
+margin-left: 0px;
+}
+
+tr td {
+  padding: 10px 5px;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  width: 100%;
+}
+
+th {
+  padding: 10px;
+  color: #ced4da;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 400;
+  width: 100%;
+}
+
+td:hover {
+background-color: transparent;
+border: 1px solid #275c6f;
+cursor: pointer;
+padding: 0;
+height: 0px;
+width: 0px;
+}
+
+#month-year {
+text-align: center;
+font-size: 16px;
+margin: 10px 0;
+position: absolute;
+top: 0px;
+left: 10px;
+color:  #f5f5f5;
+text-align: left;
+font-family: "Roboto-Bold", sans-serif;
+font-size: 23px;
+line-height: 140%;
+font-weight: 700;
+}
+
+#prev-month {
+cursor: pointer;
+float: left;
+margin: 0 10px;
+font-size: 14px;
+position: absolute;
+top: 10px;
+right: 40px;
+color: white;
+color: #275c6f;
+font-size: 25px;
+}
+
+#next-month {
+  cursor: pointer;
+  float: left;
+  margin: 0 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #275c6f;
+  font-size: 25px;
+}
+
+.current-day {
+  border: 1px solid #275c6f;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.previous-month-day, .next-month-day {
+      color: #8e8e8e; /* Color for previous and next month's days */
+}
+
+.sidebar-active.active {
+  left: 0;
+}
+
+  @media only screen and (max-width: 767px) {
+    /* mobile style for middle contents */
+    .courses-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 45px;
+      left: 0;
+    }
+
+    .courses-content .main-screen {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .main-screen .microsoft-container {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        position: initial;
+        margin-bottom: 150px;
+    }
+
+    .microsoft-office-suite-header p {
+        font-size: 28px;
+        width: 100%;
+    }
+    .microsoft-office-suite-description {
+        display: block;
+        width: 95%;
+    }
+
+    .microsoft-office-suite-description p {
+        width: 95%;
+    }
+
+    .microsoft-office-suite-description .one {
+        display: block;
+        font-size: 19px;
+        margin-top: 50px;
+    }
+
+    .microsoft-office-suite-description .two {
+        display: block;
+        font-size: 19px;
+        margin-top: 5px;
+    }
+    .microsoft-office-suite-description .three {
+        display: block;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .microsoft-container .microsoft-office-suite-image {
+        display: block;
+        width: 95%;
+        height: 190px;
+        margin: 0 auto;
+        position: initial;
+        padding: 0;
+    }
+
+    .microsoft-office-suite-image img {
+        background: linear-gradient(180deg,rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0) 100%);
+        display: block;
+        width: 95%;
+        height: 180px;
+        padding: 20px;
+        margin: 0 auto;
+        object-fit: initial;
+    }
+
+    .microsoft-container .course-description {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .course-description .desc {
+        font-size: 16px;
+    }
+
+    .course-description .course-duration {
+        display: block;
+        font-size: 17px;
+        margin-top: 20px;
+        margin-left: -33px;
+    }
+
+    .microsoft-container .course-status {
+        margin-top: -50px;
+    }
+
+    .course-status .status-color {
+        height: 23px;
+    }
+
+    .course-status p {
+        font-size: 17px;
+    }
+
+
+    .listed-courses .course-header {
+        font-size: 28px;
+    }
+
+    .listed-courses .course-short-description {
+        display: block;
+        font-size: 16px;
+        margin-top: -50px;
+    }
+
+    .listed-courses .course-image {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -40px;
+    }
+
+    .course-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: initial;
+    }
+
+    .listed-courses a {
+        width: 80%;
+        font-size: 20px;
+        /* height: 25px; */
+        margin-top: -18px;
+    }
+
+    .quiz-link {
+        width: 75%;
+        font-size: 20px;
+        margin-bottom: 90px;
+    }
+
+    .course-video-intro {
+        display: block;
+        width: 95%; 
+        margin: 0 auto;
+        /* margin-left: 15px; */
+      }
+    
+      .course-video-intro iframe {
+        border-radius: 16px;
+        display: block;
+        width: 100%;
+        height: 315px;
+      }
+
+      .course-video-intro .mark-as-complete {
+        background: #275c6f;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        width: 170px;
+        height: 26px;
+        color:#ffffff;
+        font-family: "Roboto-SemiBold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        position: relative;
+        /* margin-left: 120px; */
+        margin-bottom: 10px;
+        text-decoration: none;
+        float: right;
+      }
+
+      .course-document {
+        background: #e7e5e5;
+        border-radius: 16px;
+        display: block;
+        height: 301px;
+        width: 95%;
+        position: relative;
+        overflow: hidden;
+        margin: 30px auto 0 auto;
+      }
+
+      .course-document .page img {
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        object-fit: contain;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 100%;
+      }
+
+      .page .page-tracker {
+        height: 40px;
+        padding: 0px 8px 14px 8px;
+      }
+
+      .page-tracker p {
+        font-size: 17px;
+      }
+
+      .save-pdf {
+        width: 75%;
+      }
+    
+
+    /* mobile style for right side contents */
+    .right-content {
+        display: block;
+        width: 90%;
+        height: 600px;
+        margin: -230px auto 0px auto;
+        position: inherit;
+    }
+    .right-content .calendar-widget {
+        display: none;
+    }
+
+    .right-content .course-translate-btn {
+        display: none;
+    }
+
+    .right-content .translate-button {
+      display: none;
+    }
+
+    .right-content .course-read-btn {
+        display: none;
+    }
+
+    .course-list {
+        display: block;
+        width: 90%;
+        height: 60%;
+        margin: 40px auto 0 auto;
+        position: inherit;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* mobile style for middle contents */
+    .courses-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+
+    .courses-content .main-screen {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .main-screen .microsoft-container {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        position: initial;
+        margin-bottom: 150px;
+    }
+
+    .microsoft-office-suite-header p {
+        font-size: 28px;
+        width: 100%;
+    }
+    .microsoft-office-suite-description {
+        display: block;
+        width: 95%;
+    }
+
+    .microsoft-office-suite-description p {
+        width: 95%;
+    }
+
+    .microsoft-office-suite-description .one {
+        display: block;
+        font-size: 19px;
+        margin-top: 50px;
+    }
+
+    .microsoft-office-suite-description .two {
+        display: block;
+        font-size: 19px;
+        margin-top: 5px;
+    }
+    .microsoft-office-suite-description .three {
+        display: block;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .microsoft-container .microsoft-office-suite-image {
+        display: block;
+        width: 95%;
+        height: 190px;
+        margin: 0 auto;
+        position: initial;
+        padding: 0;
+    }
+
+    .microsoft-office-suite-image img {
+        background: linear-gradient(180deg,rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0) 100%);
+        display: block;
+        width: 95%;
+        height: 180px;
+        padding: 20px;
+        margin: 0 auto;
+        object-fit: initial;
+    }
+
+    .microsoft-container .course-description {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .course-description .desc {
+        font-size: 16px;
+    }
+
+    .course-description .course-duration {
+        display: block;
+        font-size: 17px;
+        margin-top: 20px;
+        margin-left: -33px;
+    }
+
+    .microsoft-container .course-status {
+        margin-top: -50px;
+    }
+
+    .course-status .status-color {
+        height: 23px;
+    }
+
+    .course-status p {
+        font-size: 17px;
+    }
+
+
+    .listed-courses .course-header {
+        font-size: 28px;
+    }
+
+    .listed-courses .course-short-description {
+        display: block;
+        font-size: 16px;
+        margin-top: -50px;
+    }
+
+    .listed-courses .course-image {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -40px;
+    }
+
+    .course-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: initial;
+    }
+
+    .listed-courses a {
+        width: 80%;
+        font-size: 20px;
+        /* height: 25px; */
+        margin-top: -18px;
+    }
+
+    .quiz-link {
+        width: 75%;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .course-video-intro {
+        display: block;
+        width: 95%; 
+        margin: 0 auto;
+        /* margin-left: 15px; */
+      }
+    
+      .course-video-intro iframe {
+        border-radius: 16px;
+        display: block;
+        width: 100%;
+        height: 315px;
+      }
+
+      .course-video-intro .mark-as-complete {
+        background: #275c6f;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        width: 170px;
+        height: 26px;
+        color:#ffffff;
+        font-family: "Roboto-SemiBold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        position: relative;
+        /* margin-left: 120px; */
+        margin-bottom: 10px;
+        text-decoration: none;
+        float: right;
+      }
+
+      .course-document {
+        background: #e7e5e5;
+        border-radius: 16px;
+        display: block;
+        height: 301px;
+        width: 95%;
+        position: relative;
+        overflow: hidden;
+        margin: 30px auto 0 auto;
+      }
+
+      .course-document .page img {
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        object-fit: contain;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 100%;
+      }
+
+      .page .page-tracker {
+        height: 40px;
+        padding: 0px 8px 14px 8px;
+      }
+
+      .page-tracker p {
+        font-size: 17px;
+      }
+
+      .save-pdf {
+        width: 75%;
+      }
+    
+
+    /* mobile style for right side contents */
+    .right-content {
+        display: block;
+        width: 90%;
+        margin: -190px auto 20px auto;
+        position: initial;
+    }
+    .right-content .calendar-widget {
+        display: none;
+    }
+
+    .right-content .course-translate-btn {
+        display: none;
+    }
+
+    .right-content .translate-button {
+      display: none;
+    }
+
+    .right-content .course-read-btn {
+        display: none;
+    }
+
+    .course-list {
+      display: block;
+      width: 90%;
+      height: 60%;
+      margin: 40px auto 0 auto;
+      position: inherit;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+  }

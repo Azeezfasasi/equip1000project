@@ -1,0 +1,218 @@
+.welcome-container {
+    margin-bottom: 80px;
+}
+
+.welcome-container .top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 720px;
+    height: 84px;
+    position: relative;
+    margin-top: 90px;
+}
+
+.top .first {
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 500;
+    position: relative;
+    width: 624px;
+}
+
+.top span {
+    color: #ffa76d;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.top .second {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    position: relative;
+    width: 472px;
+    margin-top: -30px;
+}
+
+.welcome-container .product-container {
+    display: block;
+    width: 85%;
+    position: relative;
+    margin: 70px auto -40px auto;
+}
+
+.product-container h3 {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    position: relative;
+}
+
+.product-container p {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    margin-top: -10px;
+}
+
+.product-container img {
+    border-radius: 8px;
+    width: 100%;  
+}
+
+.product-container .apply-btn {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px;
+    display: block;
+    width: 111px;
+    text-decoration: none;
+}
+
+.apply-btn p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome-container {
+        display: block;
+        width: 95%;
+        height: fit-content;
+        margin: 0 auto 90px auto;
+        position: relative;
+    }
+
+    .welcome-container .top {
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -20px;
+        margin-top: 40px;
+    }
+
+    .top .first {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        line-height: 0%;
+        font-weight: 500;
+        position: relative;
+        /* width: 624px; */
+        margin-bottom: 10px;
+    }
+
+    .first span {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .top .second {
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .welcome-container .product-container {
+        display: block;
+        height: 400px;
+        margin-bottom: -100px;
+    }
+
+    .product-container h3 {
+        font-weight: 600;
+    }
+
+    .product-container p {
+        font-size: 17px;
+    }
+
+    .product-container .apply-btn {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .welcome-container {
+        display: block;
+        width: 95%;
+        height: fit-content;
+        margin: 0 auto 90px auto;
+        position: relative;
+    }
+
+    .welcome-container .top {
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -20px;
+        margin-top: 40px;
+    }
+
+    .top .first {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        line-height: 0%;
+        font-weight: 500;
+        position: relative;
+        /* width: 624px; */
+        margin-bottom: 10px;
+    }
+
+    .first span {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .top .second {
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .welcome-container .product-container {
+        display: block;
+        height: 400px;
+        margin-bottom: -100px;
+    }
+
+    .product-container h3 {
+        font-weight: 600;
+    }
+
+    .product-container p {
+        font-size: 17px;
+    }
+
+    .product-container .apply-btn {
+        margin-top: 20px;
+    }
+}

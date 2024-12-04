@@ -1,0 +1,113 @@
+/* Main container for the contact card */
+.contact-card-container,
+.contact-card-container * {
+  box-sizing: border-box;
+}
+.contact-card-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 32px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+/* Frame that wraps the contact card content */
+.contact-card-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header section with icon and title */
+.contact-header-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-icon-frame {
+  background: var(--primary-blue-100, #275c6f);
+  border-radius: 200px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+  overflow: visible;
+}
+
+.contact-title {
+  color: var(--neutral-600, #ffffff);
+  text-align: left;
+  font-family: var(--desktop-h5-bold-font-family, "Roboto-Bold", sans-serif);
+  font-size: var(--desktop-h5-bold-font-size, 23px);
+  line-height: var(--desktop-h5-bold-line-height, 140%);
+  font-weight: var(--desktop-h5-bold-font-weight, 700);
+  position: relative;
+}
+
+/* Fields styling */
+.contact-field {
+  background: var(--primary-blue-100, #275c6f);
+  border-radius: 8px;
+  border: 1px solid var(--neutral-600, #ffffff);
+  padding: 9px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.field-label {
+  color: var(--neutral-400, #ced4da);
+  text-align: left;
+  font-family: var(--desktop-body-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--desktop-body-font-size, 13px);
+  line-height: var(--desktop-body-line-height, 140%);
+  font-weight: var(--desktop-body-font-weight, 400);
+  position: relative;
+}
+
+/* Button frame and styling */
+.contact-button-frame {
+  background: var(--primary-blue-100, #275c6f);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 248px;
+  border: none;
+  outline: none;
+}
+
+.send-button {
+  color: var(--neutral-600, #ffffff);
+  text-align: left;
+  font-family: var(--desktop-body-bold-font-family, "Roboto-Bold", sans-serif);
+  font-size: var(--desktop-body-bold-font-size, 13px);
+  line-height: var(--desktop-body-bold-line-height, 140%);
+  font-weight: var(--desktop-body-bold-font-weight, 700);
+  position: relative;
+}
