@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/equip1000project/static/css/main.53a51cd1.css",
-    "main.js": "/equip1000project/static/js/main.2d1746f4.js",
+    "main.js": "/equip1000project/static/js/main.864a2d36.js",
     "static/js/453.77d7c4af.chunk.js": "/equip1000project/static/js/453.77d7c4af.chunk.js",
     "static/media/mobileheroimage.svg": "/equip1000project/static/media/mobileheroimage.f4692fd03f1caff66f610cfeb887fe4c.svg",
     "static/media/Hero Image.svg": "/equip1000project/static/media/Hero Image.50fbac131c78105719d3.svg",
@@ -15,8 +15,12 @@
     "static/media/AI Tools for Educators Image-c.png": "/equip1000project/static/media/AI Tools for Educators Image-c.f937f636b54845e6cc0a.png",
     "static/media/unlockimage.png": "/equip1000project/static/media/unlockimage.5f78487883271ba135b5.png",
     "static/media/heroimage.jpg": "/equip1000project/static/media/heroimage.90b848cdcb2554b2a20b.jpg",
+    "static/media/virtual-learning.png": "/equip1000project/static/media/virtual-learning.ccfaeb6b70391dd1c7fa.png",
     "static/media/Social Media Tools for Educators Image-c.png": "/equip1000project/static/media/Social Media Tools for Educators Image-c.861e70ccad5f8ded1301.png",
     "static/media/discoverimage.png": "/equip1000project/static/media/discoverimage.32f380ddc9e7b634f357.png",
+    "static/media/ai-tools.png": "/equip1000project/static/media/ai-tools.d6cdd584012dd04d5ee0.png",
+    "static/media/social.png": "/equip1000project/static/media/social.b0dbc1f4fd5c88673861.png",
+    "static/media/Microsoft Innovative Educator Programme Image.png": "/equip1000project/static/media/Microsoft Innovative Educator Programme Image.2cfae30129043c2eca2f.png",
     "static/media/Canva for Educators Image-c.png": "/equip1000project/static/media/Canva for Educators Image-c.96ad272debabe0b028f3.png",
     "static/media/mi-fi.png": "/equip1000project/static/media/mi-fi.d70b6677f1665057d536.png",
     "static/media/ms-powerpoint.png": "/equip1000project/static/media/ms-powerpoint.093fc8cd5ea50856950d.png",
@@ -34,6 +38,7 @@
     "static/media/john.png": "/equip1000project/static/media/john.67e7a7a8d96a7bfcdea5.png",
     "static/media/etti.png": "/equip1000project/static/media/etti.8c6b21d86f2cd9db85a5.png",
     "static/media/Kahoot for Educators Image-c.png": "/equip1000project/static/media/Kahoot for Educators Image-c.b449c8a46733f8737379.png",
+    "static/media/Kahoot for Educators Image.png": "/equip1000project/static/media/Kahoot for Educators Image.b449c8a46733f8737379.png",
     "static/media/hunter.png": "/equip1000project/static/media/hunter.ce7116ed1b1f7dc3863b.png",
     "static/media/charlie.png": "/equip1000project/static/media/charlie.37bbec80df65a1996843.png",
     "static/media/ms-word.png": "/equip1000project/static/media/ms-word.93b5e742385fa9d3ce6d.png",
@@ -43,11 +48,14 @@
     "static/media/Google Suit Image-c.png": "/equip1000project/static/media/Google Suit Image-c.e3357a24db7921e7381d.png",
     "static/media/mi-fi-transparent.svg": "/equip1000project/static/media/mi-fi-transparent.2932024a03a85499b7ebea752c97b986.svg",
     "static/media/statimage2.svg": "/equip1000project/static/media/statimage2.92cf02b99a8a6cf09665fa23e9b80bd1.svg",
+    "static/media/Microsoft Office Suite Image.png": "/equip1000project/static/media/Microsoft Office Suite Image.789b9faaf2562a26f52f.png",
     "static/media/statimage4.svg": "/equip1000project/static/media/statimage4.81451595297c0d54d5964f1d5eb44074.svg",
     "static/media/mario.png": "/equip1000project/static/media/mario.a526d7cc040624640608.png",
     "static/media/cert-3.png": "/equip1000project/static/media/cert-3.aad29897e6b043052930.png",
     "static/media/dell-xps-13-screen-lid1 1.png": "/equip1000project/static/media/dell-xps-13-screen-lid1 1.4f1605b7998f7662e4aa.png",
     "static/media/dell-xps-laptop.png": "/equip1000project/static/media/dell-xps-laptop.4f1605b7998f7662e4aa.png",
+    "static/media/Canva for Educators Image.png": "/equip1000project/static/media/Canva for Educators Image.f82463c245476af151fa.png",
+    "static/media/Google Suite Image.png": "/equip1000project/static/media/Google Suite Image.37542eccce042ff9a188.png",
     "static/media/hp-pavilion-laptop.png": "/equip1000project/static/media/hp-pavilion-laptop.ef7bcdae5c60a1c86b4c.png",
     "static/media/mifi 1.png": "/equip1000project/static/media/mifi 1.5b032ab198d637dc51b2.png",
     "static/media/equiplogo.svg": "/equip1000project/static/media/equiplogo.c18d35abc9e76f100b5439f29cc40ee4.svg",
@@ -77,11 +85,11 @@
     "static/media/arrowback.svg": "/equip1000project/static/media/arrowback.077030af40a7d89cda49d2b0ae891416.svg",
     "static/media/Cancel.svg": "/equip1000project/static/media/Cancel.ad64ece30fb4ca636dca228b6a9941b0.svg",
     "main.53a51cd1.css.map": "/equip1000project/static/css/main.53a51cd1.css.map",
-    "main.2d1746f4.js.map": "/equip1000project/static/js/main.2d1746f4.js.map",
+    "main.864a2d36.js.map": "/equip1000project/static/js/main.864a2d36.js.map",
     "453.77d7c4af.chunk.js.map": "/equip1000project/static/js/453.77d7c4af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53a51cd1.css",
-    "static/js/main.2d1746f4.js"
+    "static/js/main.864a2d36.js"
   ]
 }
