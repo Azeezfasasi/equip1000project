@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/equip1000project/static/css/main.5874677f.css",
+    "main.css": "/equip1000project/static/css/main.79d52141.css",
     "main.js": "/equip1000project/static/js/main.0b7159ab.js",
     "static/js/453.77d7c4af.chunk.js": "/equip1000project/static/js/453.77d7c4af.chunk.js",
     "static/media/mobileheroimage.svg": "/equip1000project/static/media/mobileheroimage.f4692fd03f1caff66f610cfeb887fe4c.svg",
@@ -84,12 +84,12 @@
     "static/media/arrowforward.svg": "/equip1000project/static/media/arrowforward.f9adb771b2091048e8eaea038b70a614.svg",
     "static/media/arrowback.svg": "/equip1000project/static/media/arrowback.077030af40a7d89cda49d2b0ae891416.svg",
     "static/media/Cancel.svg": "/equip1000project/static/media/Cancel.ad64ece30fb4ca636dca228b6a9941b0.svg",
-    "main.5874677f.css.map": "/equip1000project/static/css/main.5874677f.css.map",
+    "main.79d52141.css.map": "/equip1000project/static/css/main.79d52141.css.map",
     "main.0b7159ab.js.map": "/equip1000project/static/js/main.0b7159ab.js.map",
     "453.77d7c4af.chunk.js.map": "/equip1000project/static/js/453.77d7c4af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5874677f.css",
+    "static/css/main.79d52141.css",
     "static/js/main.0b7159ab.js"
   ]
 }
